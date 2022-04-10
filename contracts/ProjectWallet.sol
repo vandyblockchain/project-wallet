@@ -47,6 +47,9 @@ contract SimpleWallet is Allowance{
     }
 
     function deposit() public payable{
-        emit MoneyDeposited(msg.sender, msg.value);
+       
     }
+
+    receive() external payable {}
+    
 }
